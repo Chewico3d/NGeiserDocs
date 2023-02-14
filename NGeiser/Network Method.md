@@ -5,7 +5,8 @@ This page shows how to create a Network Method in NGeyser, these classes will be
 To declare a static funtion you just need to create a funtion that contains [NetworkParameters](/) as the function parameter \
 Then the internal caller stores the method with the name : ClassName.MethodName
 
-`using NGeyser;
+```cs
+using NGeyser;
 
 //This class is derived from NetworkClass to allow store the NetworkMethods
 class ExampleClass : NetworkClass {
@@ -15,4 +16,4 @@ class ExampleClass : NetworkClass {
         //Do stuff
         Console.WriteLine("I have recived a message!!!");
     }
-}`
+}```
