@@ -16,4 +16,5 @@ class ExampleClass : NetworkClass {
         //Do stuff
         Console.WriteLine("I have recived a message!!!");
     }
-}`
+}
+```
