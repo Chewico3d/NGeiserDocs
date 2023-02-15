@@ -1,0 +1,84 @@
+input: ./ # The local path from this retype.yml file to your content files.
+          # See also: output
+
+# -----------------------------------------------------------------------------
+
+output: .retype # Custom path to the output directory.
+                # See also: input
+
+# -----------------------------------------------------------------------------
+
+url: https://ngeiser.com
+
+# -----------------------------------------------------------------------------
+
+branding:
+  title: NGeiser Docs                # Your custom website title; keep it short.
+  logo: https://cdn0.ecologiaverde.com/es/posts/4/5/3/que_es_un_geiser_y_por_que_se_produce_3354_orig.jpg
+  logoDark: https://cdn0.ecologiaverde.com/es/posts/4/5/3/que_es_un_geiser_y_por_que_se_produce_3354_orig.jpg
+  logoAlign: left               # Align the logo to the right or the left.
+  label: Docs # Optional label. To remove the label, remove this config.
+  colors:
+    label:                  # Label colors
+      text: "#ffffff"       # Custom color for the label text.
+      background: "#ff0000" # Custom color for the label background.
+
+# -----------------------------------------------------------------------------
+
+links: # A list of custom links to add to the top bar of the generated website.
+       # See also: footer.links
+  - text: Home      # The text to use for the link
+    link: / # Link to an internal file or external URL.
+
+# -----------------------------------------------------------------------------
+
+footer:
+  copyright: "© All rights reserved." # A custom copyright statement.
+  links:               # A list of links to include in the footer.
+                       # See also: links
+    - text: License    # The text to use for the link
+      link: license.md # Point to an internal file or external URL.
+
+# -----------------------------------------------------------------------------
+
+cache:
+  busting: path # Cache busting strategy.
+                 # Options include: none | path | query (default)
+
+# -----------------------------------------------------------------------------
+
+edit:
+  repo: https://github.com/Chewico3d/NGeiserDocs""   # The URL where the source files for this project are located.
+  base: "/"   # Optional base path to a directory within the above repo.
+  branch: "" # Point to a custom branch within the repo.
+  label: "Edit this page" # A custom label for the generated link.
+
+# -----------------------------------------------------------------------------
+
+editor:         # Configure the page live editor functionality that is only
+                # available when `retype watch` is running.
+  enabled: true # Set to false to disable and hide the live editor.
+
+# -----------------------------------------------------------------------------
+
+favicon: static/favicon.png # Path to a custom favicon, or.
+                            # just put a favicon.ico in your project root.
+
+# -----------------------------------------------------------------------------
+
+generator:
+  recase: all # Set to `none` to not recase any file or folder names.
+              # By default, all generated file and folder names are
+              # generated in all lowercase.
+
+# -----------------------------------------------------------------------------
+
+markdown:          # Markdown configuration options.
+  lineBreaks: soft # Switches between `soft` and `hard` line break modes.
+
+# -----------------------------------------------------------------------------
+
+meta:
+  title: " | Widgets" # Appended to the <title> element on all pages.
+
+# -----------------------------------------------------------------------------
